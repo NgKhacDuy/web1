@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='testlogin.css'>
+</head>
+<body>
+    <div class="cont">
+    <div class="login" id="l-login">
+        Tài Khoản
+    </div>
+    <div class="popup">
+        <div class="loginform">
+            <div class="close-btn">&times;</div>
+            <div class="but-box">
+                <div id="l-but"></div>
+                <button type="button" class="but-tog" onclick="Dangnhap()">Đăng Nhập</button>
+                <button type="button" class="but-tog" onclick="Dangky()">Đăng Ký</button>
+            </div>
+            <form id="DN" class="input-g">
+                <input type="text" class="input-field" placeholder="Tên đăng nhập" required>
+                <input type="password" class="input-field" placeholder="Mật Khẩu" required>
+               <label> <input type="checkbox" class="c-box"><span>Nhớ mật khẩu</span></label>
+                <button type="submit" class="submit-b">Đăng Nhập</button>
+            </form>
+            <form id="DK" class="input-g">
+                <input type="text" class="input-field" placeholder="Tên đăng nhập" required>
+                <input type="email" class="input-field" placeholder="Mời bạn nhập Email" required>
+                <input type="password" class="input-field" placeholder="Mật Khẩu" required>
+                   <label > <input type="checkbox" class="c-box"><span>Tôi đồng ý với điều khoản người dùng</span></label>
+                <button type="submit" class="submit-b">Đăng kí</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="testlogin.js"></script>
+</html>
+

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app{
+    display: flex;
+}
+
+.dashboard{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    left: 0;
+    width: 90px;
+    background-color: #3e424a;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.dashboard:hover{
+    width: 320px;
+    transition: 1s;
+}
+
+.dashboard-item{
+    position: relative;
+    width: 280px;
+    font-size: 20px;
+    color: white;
+    display: table;
+    padding: 4px 10px 20px 10px;    
+}
+
+.dashboard-item:hover{
+    cursor: pointer;
+    background-color: slategray;
+}
+
+.dashboard-item i{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 20px;
+    font: 20px;
+    text-align: center;
+}
+
+.dashboard-item span{
+    position: relative;
+    top: 19px;
+    margin-left: 10px;
+}
+
+.dashboard-logOut{
+    position: absolute;
+    bottom: 0;
+}
+
+/* Main */
+
+.main{
+    background-color: darkgray;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+}
+
+.main-top{
+    display: flex;
+    width: 100%;
+}
+
+/* form */
+.formAddProduct{
+    width: 65%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.formAddProduct input[type=text], input[type=file], input[type=number]{
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical
+}
+.formAddProduct input[type=submit]{
+    width: 100%;
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formAddProduct input[type=submit]:hover{
+    background-color: #45a049;
+}
